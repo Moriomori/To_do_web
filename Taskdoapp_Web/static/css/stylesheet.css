@@ -1,0 +1,171 @@
+.not-boot-body{
+    background: #66B3B1;
+}
+
+.login-container{
+    background: white;
+    max-width: 400px;
+    border: solid 1px #3D425F;
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 400px;
+    height: 320px;
+}
+
+.header{
+    background: #3D425F;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px;
+    font-size: 25px;
+    margin-right: -1px;
+    margin-left: 0px;
+}
+
+
+fieldset{
+    padding: 15px;
+}
+
+.title{
+    color: white;
+    margin: 50px auto;
+    width: 510px;
+    position: relative;
+}
+
+.title-container{
+    color: white;
+    margin: 0 auto;
+    width: 650px;
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    right: 20%;
+}
+
+.list-group-item{
+    background: #66B3B1;
+    margin: 0 auto;
+    font-size: 24px;
+    width: 600px;
+}
+
+.footer-container{
+    font-size: 24px;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.user-welcome{
+    font-size: 20px;
+    margin: 0 auto;
+    width: 450px;
+    color: white;
+    text-align: center;
+}
+
+.col{
+    color: #3D425F;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 500px;
+    height: 400px;
+}
+
+.icon{
+    color: #3D425F;
+}
+
+.portal-index{
+    font-size: 20px;
+    color: white;
+}
+
+.logout{
+    padding: 0px 0px 0px 23px
+}
+
+.task-regi-container{
+    background: white;
+    max-width: 400px;
+    border: solid 1px #3D425F;
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 400px;
+    height: 550px;
+}
+
+.task-index-header{
+    background: #3D425F;
+    color: white;
+    padding: 15px;
+    font-size: 25px;
+    margin-right: -1px;
+    margin-left: 0px;
+}
+
+.task-index-container{
+    background: white;
+    max-width: 400px;
+    border: solid 1px #3D425F;
+    position: relative;
+    margin: auto;
+    width: 400px;
+    height: 170px;
+}
+
+.day{
+    padding: 10px 0px 0px 24px;
+}
+
+.week{
+    padding: 10px 0px 0px 30px;
+}
+
+.month{
+    padding: 10px 0px 0px 32px;
+}
+
+.new-task{
+    padding: 10px 0px 0px 12px;
+}
+
+.tasks{
+    padding: 10px 0px 0px 10px;
+}
+
+.f-task{
+    padding: 10px 0px 0px 10px;
+}
+
+.graph{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 550px;
+    height: 450px;
+}
+
+.back{
+    position: relative;
+    top: 80%;
+    left: 60%;
+}

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- BootstrapのCSS読み込み -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/stylesheet.css">
+        <!-- Awesomeの読み込み-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <!-- jQuery読み込み -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- BootstrapのJS読み込み -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+
+    <body class="not-boot-body">
+        <div class="user-welcome">
+            <h1>ようこそ、{{username}}さん</h1>
+        </div>
+        
+        <div class="menu">
+            <table class="table">
+                <tbody class="col">
+                    <tr>
+                        <td><a type="button" class="btn btn-outline-default day" href="{{url_for('daily_task')}}"><i class="fas fa-calendar-day fa-5x icon"></i><div class="portal-index">日タスク表</div></a></td>
+                        <td><a type="button" class="btn btn-outline-default week" href="{{url_for('weekly_task')}}"><i class="fas fa-calendar-week fa-5x icon"></i><div class="portal-index">週タスク表</div></a></td>
+                        <td><a type="button" class="btn btn-outline-default month" href="{{url_for('monthly_task')}}"><i class="fas fa-calendar fa-5x icon"></i><div class="portal-index">月タスク表</div></a></td>
+                    </tr>
+                    <tr>
+                        <td><a type="button" class="btn btn-outline-primary new-task" href="{{url_for('task_new')}}"><i class="fas fa-edit fa-5x icon"></i><div class="portal-index">新規タスク登録</div></a></td>
+                        <td><a type="button" class="btn btn-outline-success tasks" href="{{url_for('task_index')}}"><i class="fas fa-file-download fa-5x icon"></i><div class="portal-index">現在タスク一覧</div></a><br></td>
+                        <td><a type="button" class="btn btn-outline-warnig f-task" href="{{url_for('task_f_index')}}"><i class="fas fa-archive fa-5x icon"></i><div class="portal-index">終了タスク照会</div></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><a type="button" class="btn btn-outline-danger" href="{{url_for('logout')}}"><i class="fas fa-sign-out-alt fa-5x icon logout"></i><div class="portal-index logout">ログアウト</div></a><br></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </body>
+</html>
+
+

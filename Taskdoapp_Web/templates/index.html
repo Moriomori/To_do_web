@@ -1,0 +1,56 @@
+
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <!-- BootstrapのCSS読み込み -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/stylesheet.css">
+        <!-- jQuery読み込み -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- BootstrapのJS読み込み -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+
+
+
+    <body class="not-boot-body">
+        <div class = "title">
+            <h1>タスクマトリックス管理アプリ</h1>
+        </div>
+
+        <div class="login-container">
+            <div class="row header">
+                <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                Sign In 
+            </div>
+            
+            <form action="auth" method="POST">
+                <fieldset class="form-group">
+                    <div class="form-group">
+                        <legend>ユーザ名</legend>
+                        <input type="text" class="form-control" name="userName">
+                    </div>
+                    <div class="form-group">
+                        <legend>パスワード</legend>
+                        <input type="password" class="form-control" name="userPswd">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign In</button>
+                    <a class="btn btn-success" href="{{url_for('user_new')}}" role="button">Register</a>
+                </fieldset>
+            </form>
+        </div>
+        
+        <div class="title-container">
+            <ul class="list-group">
+                <li class="list-group-item">たくさんの仕事・やるべきことを抱えている</li>
+                <li class="list-group-item">優先順位を付けるのが苦手</li>
+                <li class="list-group-item">毎日のタスク管理が面倒くさい</li>
+                <div class="footer-container">
+                    というあなたに、緊急度と重要度から自動的にタスクを４分類し、優先順位付けを行います。
+                </div>
+            </ul>  
+        </div>
+    </body>
+</html>

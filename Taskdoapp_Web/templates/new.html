@@ -1,0 +1,37 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- BootstrapのCSS読み込み -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/stylesheet.css">
+        <!-- Awesomeの読み込み-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <!-- jQuery読み込み -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- BootstrapのJS読み込み -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+    <body class="not-boot-body">
+        <div class="login-container">
+            <div class="row header">
+                新規登録
+            </div>
+            
+            <form action="new/regi" method="POST">
+                <fieldset class="form-group">
+                    <div class="form-group">
+                        <legend>ユーザ名</legend>
+                        <input type="text" class="form-control" name="userName">
+                    </div>
+                    <div class="form-group">
+                        <legend>パスワード</legend>
+                        <input type="password" class="form-control" name="userPswd">
+                    </div>
+                    <button type="submit" class="btn btn-success">Regist</button>
+                    <a class="btn btn-default" href="{{url_for('index')}}" role="button">Home</a>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

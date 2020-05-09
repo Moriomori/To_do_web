@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- BootstrapのCSS読み込み -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/stylesheet.css">
+        <!-- Awesomeの読み込み-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <!-- jQuery読み込み -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- BootstrapのJS読み込み -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+    <body class="not-boot-body">
+        <div class="task-regi-container">
+            <div class="row header">
+                <span class="fas fa-edit" aria-hidden="true"></span>
+                タスク編集
+            </div>
+            
+            <form action="edit" method="POST">
+                <fieldset class="form-group">
+                    <div class="form-group">
+                        <legend>作業名</legend>
+                        <input type="text" class="form-control" name="taskName", value= {{task_info[0]}}>
+                    </div>
+                    <div class="form-group">
+                        <legend>締め切り日</legend>
+                        <input type="date" class="form-control" name="deaddate", value= {{task_info[1]}}>
+                    </div>
+                    <div class="form-group">
+                        <legend>締め切り時刻</legend>
+                        <input type="time" class="form-control" name="deadtime", value= {{task_info[2]}}>
+                    </div>
+                    <div class="form-group">
+                        <legend>重要度(0~100)</legend>
+                        <input type="text" class="form-control" name="importance", value= {{task_info[3]}}>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Regist</button>
+                    <a class="btn btn-success" href="{{url_for('portal')}}" role="button">Portal</a>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
+

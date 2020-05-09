@@ -1,0 +1,39 @@
+<head>
+    <meta charset="utf-8">
+    <!-- BootstrapのCSS読み込み -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/stylesheet.css">
+    <!-- Awesomeの読み込み-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- jQuery読み込み -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+
+
+<body class="not-boot-body">
+    <div class="task-index-header">
+        <span class="fas fa-archive" aria-hidden="true"></span>
+        終了タスク一覧
+      </div>
+        
+    <table class="table">
+        <tr>
+            <th>番号</th>
+            <th>タスク名</th>
+            <th>終了日時</th>
+        </tr>
+
+        {% for task in f_tasks %}
+        <tr>
+          <th>{{task[0]}}</th>
+          <th>{{task[1]}}</th>
+          <th>{{task[2]}}</th>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a class="btn btn-success" href="{{url_for('portal')}}" role="button">Portal</a>
+</body>
